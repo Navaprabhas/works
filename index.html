@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prabhas - Developer</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #ffffff;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #1f1f1f;
-    }
-    nav a {
-      color: #ffffff;
-      margin: 0 15px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00ffff;
-    }
-    main {
-      padding: 50px;
-      text-align: center;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1f1f1f;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Inspired by Ishan Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Prabhas</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Welcome to My Portfolio</h2>
-    <p>I'm a developer specializing in modern web applications.</p>
-  </main>
-  <footer>
-    <p>&copy; 2025 Prabhas. All rights reserved.</p>
-  </footer>
+    <header class="hero-section">
+        <nav>
+            <div class="logo">YourLogo</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>I'm [Your Name]</h1>
+            <p>A [Your Role] who cares about [Your Passion/Focus].</p>
+            <div class="animated-focus">
+                <span>accessibility.</span>
+                </div>
+        </div>
+        <div class="location-time">
+            <span id="time">5:30 AM IST</span> <span>Your Location (e.g., 12.8487° N, 77.6482° W)</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>Introduce yourself here. Talk about your journey, skills, and what drives you. The original site has a more narrative and reflective tone.</p>
+        </section>
+
+        <section id="projects" class="content-section">
+            <h2>Selected Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250.png?text=Project+1" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of your project.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250.png?text=Project+2" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of your project.</p>
+                    <a href="#">View Project</a>
+                </div>
+                </div>
+        </section>
+
+        <section id="writing" class="content-section">
+            <h2>Writing / Blog</h2>
+            <div class="article-list">
+                <div class="article-item">
+                    <h3><a href="#">Blog Post Title 1</a></h3>
+                    <p>A brief excerpt or summary of the blog post...</p>
+                    <span>Date - Reading time</span>
+                </div>
+                <div class="article-item">
+                    <h3><a href="#">Blog Post Title 2</a></h3>
+                    <p>A brief excerpt or summary of the blog post...</p>
+                    <span>Date - Reading time</span>
+                </div>
+                </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Get In Touch</h2>
+            <p>If you'd like to collaborate or just say hi, feel free to reach out!</p>
+            <a href="mailto:youremail@example.com" class="cta-button">Email Me</a>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2025</span> [Your Name]. Inspired by ishandeveloper.com</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
 
 
