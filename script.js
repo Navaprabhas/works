@@ -1,5 +1,13 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  document.getElementById('formMessage').textContent = "Thank you for reaching out! We'll get back to you soon.";
-  this.reset();
+// script.js
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".icon-item");
+  items.forEach(item => {
+    item.addEventListener("mouseenter", () => {
+      item.classList.add("hovered");
+    });
+    item.addEventListener("mouseleave", () => {
+      item.classList.remove("hovered");
+    });
+  });
 });
