@@ -1,16 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Qrello clone loaded");
-
-  // Example interactivity if needed
-  const buttons = document.querySelectorAll(".btn");
-
-  buttons.forEach(button => {
-    button.addEventListener("mouseenter", () => {
-      button.style.opacity = 0.85;
-    });
-
-    button.addEventListener("mouseleave", () => {
-      button.style.opacity = 1;
-    });
-  });
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('formMessage').textContent = "Thank you for reaching out! We'll get back to you soon.";
+  this.reset();
 });
