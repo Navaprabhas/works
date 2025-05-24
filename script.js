@@ -1,13 +1,9 @@
-// script.js
-
-document.addEventListener("DOMContentLoaded", () => {
-  const items = document.querySelectorAll(".icon-item");
-  items.forEach(item => {
-    item.addEventListener("mouseenter", () => {
-      item.classList.add("hovered");
-    });
-    item.addEventListener("mouseleave", () => {
-      item.classList.remove("hovered");
-    });
-  });
+// Newsletter form submission
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('input[type="email"]').value;
+  if (email) {
+    alert(`Thank you for subscribing, ${email}!`);
+    this.reset();
+  }
 });
