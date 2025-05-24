@@ -1,37 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Internet Corner</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altaloma Clone</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <main class="main">
-    <h1 class="welcome">Welcome to my corner<br>on the internet :)</h1>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Altaloma</div>
+      <ul class="nav-links">
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="icon-grid">
-      <div class="icon-item">
-        <img src="https://img.icons8.com/color/96/star.png" alt="Portal">
-        <p>Portal</p>
+  <section class="hero">
+    <h1>Soap for every body</h1>
+    <a href="#" class="btn">Shop Now</a>
+  </section>
+
+  <section class="products">
+    <h2>Shop our favorite soaps</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/sage-cedarwood.jpg" alt="Sage and Cedarwood" />
+        <h3>Sage and Cedarwood</h3>
       </div>
-      <div class="icon-item">
-        <img src="https://img.icons8.com/emoji/96/smiling-face-with-smiling-eyes.png" alt="Droppable">
-        <p>Droppable</p>
+      <div class="product-card">
+        <img src="images/sandalwood-rose.jpg" alt="Sandalwood and Rose" />
+        <h3>Sandalwood and Rose</h3>
       </div>
-      <div class="icon-item">
-        <img src="https://img.icons8.com/color/96/combo-chart.png" alt="App Stacks">
-        <p>App Stacks</p>
-      </div>
-      <div class="icon-item">
-        <img src="https://img.icons8.com/3d-fluency/96/user-male-circle.png" alt="Roman">
-        <p>Collab with Me</p>
+      <div class="product-card">
+        <img src="images/eucalyptus-citrus.jpg" alt="Eucalyptus and Citrus" />
+        <h3>Eucalyptus and Citrus</h3>
       </div>
     </div>
+    <a href="#" class="btn">Explore all soaps</a>
+  </section>
 
-    <p class="description">
-      Hey there! I’m a creative builder who loves turning ideas into digital magic. Explore my tools, creations, and let’s collaborate to bring more cool stuff to life!
-    </p>
-  </main>
+  <section class="features">
+    <div class="feature">
+      <h3>Pure Ingredients</h3>
+      <p>Ingredients derived from nature and for the benefit of your body.</p>
+    </div>
+    <div class="feature">
+      <h3>Small Batch</h3>
+      <p>Handcrafted in small batches to ensure quality and freshness.</p>
+    </div>
+    <div class="feature">
+      <h3>Cruelty Free</h3>
+      <p>Our products are never tested on animals.</p>
+    </div>
+  </section>
+
+  <section class="journal">
+    <h2>Journal</h2>
+    <div class="journal-entries">
+      <article>
+        <h3>My soap making process</h3>
+        <p>Discover the steps we take to create our handcrafted soaps.</p>
+      </article>
+      <article>
+        <h3>Introducing our new Rose Geranium Facial Serum</h3>
+        <p>Learn about the benefits of our latest skincare product.</p>
+      </article>
+      <article>
+        <h3>DIY hand sanitizer</h3>
+        <p>A simple recipe to make your own hand sanitizer at home.</p>
+      </article>
+    </div>
+    <a href="#" class="btn">All Posts</a>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Shop</a>
+        <a href="#">Journal</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="newsletter">
+        <p>Sign up to receive updates and 10% off your first purchase.</p>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Email Address" required />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <p class="credit">Made with ❤️ by [Your Name]</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
