@@ -4,7 +4,7 @@ const testimonials = [
       "When passion meets technology, innovation becomes your second nature.",
     name: "Nava Prabhas",
     designation: "AI & Tech Enthusisat",
-    src: "https://unsplash.com/photos/man-is-wearing-a-vr-headset-G2nJfkEdUlk",
+    src: "steve-johnson-eL0aM8Go5I8-unsplash.jpg",
   },
   {
     quote:
