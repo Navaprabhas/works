@@ -8,18 +8,22 @@
 </head>
 <body>
   <section class="testimonial-section" aria-label="Testimonials">
-    <div class="testimonial-card" id="testimonial-card">
+  <div class="testimonial-card" id="testimonial-card">
+    <div class="testimonial-image-wrapper">
       <img id="testimonial-img" class="testimonial-img" src="" alt="" />
-      <blockquote id="testimonial-quote" class="testimonial-quote"></blockquote>
+    </div>
+    <div class="testimonial-content">
       <div id="testimonial-name" class="testimonial-name"></div>
       <div id="testimonial-role" class="testimonial-role"></div>
+      <blockquote id="testimonial-quote" class="testimonial-quote"></blockquote>
+      <div class="testimonial-controls">
+        <button id="prev-btn" aria-label="Previous testimonial">&lt;</button>
+        <button id="next-btn" aria-label="Next testimonial">&gt;</button>
+      </div>
     </div>
-    <div class="testimonial-controls">
-      <button id="prev-btn" aria-label="Previous testimonial">&lt;</button>
-      <span id="testimonial-index"></span>
-      <button id="next-btn" aria-label="Next testimonial">&gt;</button>
-    </div>
-  </section>
+  </div>
+</section>
+
   <script src="script.js"></script>
 </body>
 </html>
